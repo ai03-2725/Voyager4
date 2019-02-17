@@ -3,4 +3,5 @@
   (lib (name locallib)(type KiCad)(uri ${KIPRJMOD}/locallib.pretty)(options "")(descr ""))
   (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/Type-C.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri ${KIPRJMOD}/random-keyboard-parts.pretty)(options "")(descr ""))
+  (lib (name Encoder)(type KiCad)(uri ${KIPRJMOD}/Encoder.pretty)(options "")(descr ""))
 )
