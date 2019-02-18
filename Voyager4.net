@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Ryota\Documents\GitHub\Voyager6\Voyager4.sch)
-    (date "2/17/2019 3:34:28 AM")
+    (date "2/17/2019 3:59:24 AM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -113,7 +113,7 @@
       (tstamp 5C1416B5))
     (comp (ref SW1)
       (value SW_Push)
-      (footprint random-keyboard-parts:Jumper-UserFriendly-Small)
+      (footprint Buttons_Switches_SMD:SW_SPST_SKQG)
       (libsource (lib Switch) (part SW_Push) (description "Push button switch, generic, two pins"))
       (sheetpath (names /) (tstamps /))
       (tstamp 5C4ECFAF))

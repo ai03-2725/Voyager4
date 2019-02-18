@@ -733,7 +733,7 @@ U 1 1 6098A6E6
 P 8700 4650
 F 0 "SW2" H 8700 5017 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 8700 4926 50  0000 C CNN
-F 2 "" H 8550 4810 50  0001 C CNN
+F 2 "Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 8550 4810 50  0001 C CNN
 F 3 "~" H 8700 4910 50  0001 C CNN
 	1    8700 4650
 	1    0    0    -1  

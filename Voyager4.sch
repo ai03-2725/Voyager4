@@ -529,7 +529,7 @@ U 1 1 5C4ECFAF
 P 1475 1075
 F 0 "SW1" H 1475 1360 50  0000 C CNN
 F 1 "SW_Push" H 1475 1269 50  0000 C CNN
-F 2 "random-keyboard-parts:Jumper-UserFriendly-Small" H 1475 1275 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_SKQG" H 1475 1275 50  0001 C CNN
 F 3 "" H 1475 1275 50  0001 C CNN
 	1    1475 1075
 	1    0    0    -1  
