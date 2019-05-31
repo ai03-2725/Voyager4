@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
-LIBS:Voyager6-cache
-EELAYER 26 0
+LIBS:Voyager4-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -171,23 +171,23 @@ $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 59E647C2
-P 3975 3000
-F 0 "R5" V 3900 2900 50  0000 L CNN
-F 1 "10k" V 3900 3025 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" H 3975 3000 50  0001 C CNN
-F 3 "" H 3975 3000 50  0001 C CNN
-	1    3975 3000
+P 3975 3600
+F 0 "R5" V 3900 3500 50  0000 L CNN
+F 1 "10k" V 3900 3625 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3975 3600 50  0001 C CNN
+F 3 "" H 3975 3600 50  0001 C CNN
+	1    3975 3600
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 59E64F31
-P 4175 3000
-F 0 "#PWR013" H 4175 2750 50  0001 C CNN
-F 1 "GND" V 4175 2800 50  0000 C CNN
-F 2 "" H 4175 3000 50  0001 C CNN
-F 3 "" H 4175 3000 50  0001 C CNN
-	1    4175 3000
+P 4175 3600
+F 0 "#PWR013" H 4175 3350 50  0001 C CNN
+F 1 "GND" V 4175 3400 50  0000 C CNN
+F 2 "" H 4175 3600 50  0001 C CNN
+F 3 "" H 4175 3600 50  0001 C CNN
+	1    4175 3600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -225,9 +225,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 1000 2450 1100
 Wire Wire Line
-	3250 3000 3875 3000
+	3250 3600 3875 3600
 Wire Wire Line
-	4175 3000 4075 3000
+	4175 3600 4075 3600
 Text Notes 7350 7500 0    60   ~ 0
 Mir Keyboard\n
 Text Notes 8125 7650 0    60   ~ 0
@@ -796,24 +796,6 @@ Wire Wire Line
 	5700 3850 5100 3850
 Wire Wire Line
 	5100 3850 5100 4375
-Wire Wire Line
-	2550 1100 2650 1100
-Wire Wire Line
-	2450 1100 2550 1100
-Connection ~ 2550 1100
-Connection ~ 2450 1100
-Connection ~ 2450 3900
-$Comp
-L MCU_Microchip_ATmega:ATmega32U2-AU U1
-U 1 1 5C4CD665
-P 2550 2500
-F 0 "U1" H 2550 1014 50  0000 C CNN
-F 1 "ATmega32U2-AU" H 2550 923 50  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 2550 2500 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 2550 2500 50  0001 C CNN
-	1    2550 2500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Q_NPN_BEC Q1
 U 1 1 5C635883
@@ -852,8 +834,6 @@ F 3 "" H 4050 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5100 3325 0    50   Input ~ 0
-RGBLED
-Text GLabel 4875 1600 2    50   Input ~ 0
 RGBLED
 $Comp
 L MX_Alps_Hybrids:MX-1U MX?
@@ -921,12 +901,34 @@ Text GLabel 10525 2250 2    50   Input ~ 0
 LEDGND
 Wire Wire Line
 	9025 2250 10525 2250
-Text GLabel 3250 2600 2    50   Input ~ 0
-RGBLED
-Text GLabel 3250 3400 2    50   Input ~ 0
-COL1
 Text GLabel 3250 3200 2    50   Input ~ 0
-COL3
+RGBLED
 Text GLabel 3250 2500 2    50   Input ~ 0
+COL1
+Text GLabel 3250 2300 2    50   Input ~ 0
+COL3
+Text GLabel 3250 3100 2    50   Input ~ 0
 COL2
+Text GLabel 3250 1600 2    50   Input ~ 0
+COL0
+Wire Wire Line
+	1350 1700 1375 1700
+Wire Wire Line
+	1150 1700 1125 1700
+Text GLabel 3250 1400 2    50   Input ~ 0
+ROW0
+$Comp
+L MCU_Microchip_ATmega:ATmega32U2-MU U1
+U 1 1 5D02EA58
+P 2550 2500
+F 0 "U1" H 2550 1011 50  0000 C CNN
+F 1 "ATmega32U2-MU" H 2550 920 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 2550 2500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 2550 2500 50  0001 C CNN
+	1    2550 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2450 3900
+Wire Wire Line
+	2550 1100 2650 1100
 $EndSCHEMATC
